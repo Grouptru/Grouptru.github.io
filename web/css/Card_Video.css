@@ -1,0 +1,33 @@
+body{
+    background: linear-gradient(180deg,#FEFF86,#B0DAFF);
+}
+
+.container-fluid{
+    background-color:#f5fb95;   
+    margin-top: -8px;
+    margin-bottom: -10px;
+}
+.img_logo{
+    margin: 8px 50px 0px 34px;
+    height: 80px;
+}
+.nav-item {
+    font-family: cursive;
+    margin-left: 50px;
+    float: right;
+    position: relative;
+}
+.nav-item ::before{
+    content: "";
+    position: absolute;
+    height: 100%;
+    width: 50%;
+    left: 50%;
+    right: 0;
+    transform: translate(-50%,0%);
+    transition: width 0.2s ease-in;
+}
+.nav-item :hover::before{
+    border-bottom: 5px solid #6d8a77;
+    width: 100%;
+}
